@@ -58,7 +58,7 @@
 
 #cameraPermissionsErrorApple {
   padding: 20vh 5vw;
-  font-size: 6.5vmin;
+  font-size: 6vmin;
   text-align: center;
   background-color: white;
 }
@@ -101,7 +101,7 @@
 
 .permission-error {
   padding: 3vh 5vh;
-  font-size: 3.5vh;
+  font-size: 3vh;
   background-color: white;
 }
 
@@ -114,7 +114,7 @@
   outline: none;
   background-color: #7611B7;
   color: white;
-  font-size: 2.5vh;
+  font-size: 2vh;
   display: block;
   margin-top: 2em;
   padding: 0.5em 1em;
@@ -147,20 +147,20 @@
 
 .error-text-header {
   font-family: 'Varela-Round', sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   color: #323232;
   letter-spacing: .37;
   line-height: 23pt;
 }
 
 .loading-error-header {
-  font-size: 3.5vh;
+  font-size: 3vh;
   flex: 0 0 auto;
 }
 
 .loading-error-footer {
-  font-size: 3vh;
-  line-height: 5.5vh;
+  font-size: 2.5vh;
+  line-height: 5vh;
   flex: 0 0 auto;
   text-align: center;
   width: 80vmin
@@ -168,7 +168,7 @@
 
 .loading-error-footer img {
   display: block;
-  height: 5vh;
+  height: 4.5vh;
   margin: 0 auto;
   margin-bottom: 2vh;
 }
@@ -176,7 +176,7 @@
 .loading-error-instructions {
   font-family: 'Raleway-Regular', sans-serif;
   color: #2D2E43;
-  font-size: 2.5vh;
+  font-size: 2vh;
   list-style: none;
   margin-left: 1em;
   counter-reset: line;
@@ -185,11 +185,11 @@
 
 .loading-error-instructions > li {
   position: relative;
-  margin-bottom: 5vh;
+  margin-bottom: 4.5vh;
 }
 
 .loading-error-instructions > li > img {
-  max-height: 3vh;
+  max-height: 2.5vh;
   vertical-align: middle;
   margin: 0 .5vh;
 }
@@ -198,15 +198,15 @@
   font-family: 'Varela-Round', sans-serif;
   position: absolute;
   width: 6vh;
-  height: 6vh;
+  height: 5.5vh;
   border-radius: 3vh;
   color: #fff;
   background-color: rgba(218, 209, 228, 128);
   text-align:center;
   left: -8vh;
   top: -1vh;
-  font-size: 2.5vh;
-  line-height: 6.5vh;
+  font-size: 2vh;
+  line-height: 6vh;
   counter-increment: line;
   content: counter(line);
 }
@@ -229,7 +229,7 @@
   padding: 1vh;
   background-color: #359AFF;
   color: white;
-  font-size: 2vh;
+  font-size: 1.5vh;
   box-shadow: 0 .125vh .25vh rgba(0, 0, 0, 0.5);
 }
 
