@@ -245,3 +245,38 @@
   100% {opacity: 0;}
 }
 
+.modal {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    max-width: 660px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.powered-by {
+    background: url(//deep4drive-develop.github.io/mobility-inn/2020wakuwaku/image/powered by 8th wall_horizontal_black.svg) no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 80px;
+}

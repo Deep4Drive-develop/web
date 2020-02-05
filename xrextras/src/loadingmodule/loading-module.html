@@ -1,6 +1,15 @@
 <div id="loadingContainer" class="absolute-fill">
   <!--Loading screen-->
   <div id="loadBackground" class="absolute-fill">
+    <div style="position: absolute; top: 0px; left: 0px; overflow: hidden; background: rgb(255, 255, 255); width: 100%; height: 100%;">
+          <div class="modal" style="opacity: 1;">
+            <div class="intro__content">
+              <img src="//deep4drive-develop.github.io/mobility-inn/2020wakuwaku/image/D4D_logotype_black.png" style="width:90%; left: 5%;></img>
+              <p>山手線AR</p>
+              <div class="powered-by"></div>
+            </div>
+          </div>
+    </div>
     <div id="loadImageContainer" class="absolute-fill">
       <img src="//cdn.8thwall.com/web/img/loading/v1/eight.png" id="loadImage" class="rotate-center" />
     </div>
@@ -9,12 +18,12 @@
   <!--Camera Permissions-->
   <div id="requestingCameraPermissions" class="hidden" />
     <img id="requestingCameraIcon" src="//cdn.8thwall.com/web/img/loading/v1/camera-purple.png" />
-    Tap "Allow" so we can<br>augment your reality.
+    [許可]をタップして、<br>現実を拡張します。
   </div>
 
   <!--Permission error, iOS-->
   <div id="cameraPermissionsErrorApple" class="absolute-fill hidden" />
-    Refresh the page to enable<br>your camera for AR
+    ページを更新して、<br>ARでカメラを有効にします
     <img id="cameraPermissionsErrorAppleArrow" src="//cdn.8thwall.com/web/img/loading/v1/arrow.png" />
     <img id="cameraPermissionsErrorAppleReloadCamera" src="//cdn.8thwall.com/web/img/loading/v1/reload-camera.png" />
   </div>
@@ -24,72 +33,73 @@
     <div id="cameraPermissionsCameraIcon">
       <img src="//cdn.8thwall.com/web/img/loading/v1/camera-purple.png" />
     </div>
-    <div class="loading-error-header">Let's enable your camera</div>
+    <div class="loading-error-header">カメラを有効にしましょう</div>
     <ol class="loading-error-instructions">
-      <li>Tap the <img src="//cdn.8thwall.com/web/img/loading/v1/ellipsis.png"> in the top right</li>
-      <li>Tap <span class="highlight">Settings</li>
+      <li>右上の <img src="//cdn.8thwall.com/web/img/loading/v1/ellipsis.png"> をタップします</li>
+      <li><span class="highlight">設定をタップします</li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Site settings</span>
+        <span class="highlight">サイトの設定</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Camera</span>
+        <span class="highlight">カメラ</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="highlight">Blocked</span>
+        <span class="highlight">ブロック中</span>
         <br>
-        <span class="camera-instruction-block domain-view">apps.8thwall.com</span>
+        <span class="camera-instruction-block domain-view">deep4drive-develop.github.io</span>
       </li>
       <li class="chrome-instruction hidden">
-        <span class="camera-instruction-button">CLEAR & RESET</span>
+        <span class="camera-instruction-button">データを削除してリセット</span>
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight">Advanced</span>
+        <span class="highlight">高度な</span>
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight">Manage website data</span>
+        <span class="highlight">ウェブサイトのデータを管理する</span>
       </li>
       <li class="samsung-instruction hidden">
         Press and hold<br>
-        <span class="camera-instruction-block domain-view">apps.8thwall.com</span>
+        <span class="camera-instruction-block domain-view">deep4drive-develop.github.io</span><br>
+        を押し続けます
       </li>
       <li class="samsung-instruction hidden">
-        <span class="highlight" style="color: #1500ba">DELETE</span>
+        <span class="highlight" style="color: #1500ba">削除</span>
       </li>
     </ol>
     <div class="loading-error-footer">
       <img src="//cdn.8thwall.com/web/img/loading/v1/reload.png" />
-      Then, reload the page to experience some AR magic!
+      次に、ページをリロードして、ARマジックを体験してください！
     </div>
   </div>
 
     <!--iOS devicemotion sensor is disabled -->
   <div id="deviceMotionErrorApple" class="absolute-fill hidden">
-    <div class="loading-error-header">Let's enable your motion sensors</div>
+    <div class="loading-error-header">モーションセンサーを有効にしましょう</div>
     <ol class="loading-error-instructions">
-      <li>Open <img src="https://cdn.8thwall.com/web/img/loading/v1/settings-icon-ios.png" style="max-height: 4vh"><b>Settings</b></li>
-      <li>Select <img src="https://cdn.8thwall.com/web/img/loading/v1/safari-icon.png" style="max-height: 4vh"><b>Safari</b></li>
-      <li>Enable <span class="highlight">Motion&nbsp;&amp;&nbsp;Orientation Access</span></li>
-      <li>Reload the page <img src="//cdn.8thwall.com/web/img/loading/v1/reload.png"></li>
+      <li><img src="https://cdn.8thwall.com/web/img/loading/v1/settings-icon-ios.png" style="max-height: 4vh"><b>設定アプリ</b>を開く</li>
+      <li><img src="https://cdn.8thwall.com/web/img/loading/v1/safari-icon.png" style="max-height: 4vh"><b>Safari</b>を選ぶ</li>
+      <li><span class="highlight">モーションと画面の向きのアクセス</span>をON</li>
+      <li><img src="//cdn.8thwall.com/web/img/loading/v1/reload.png">リロードする</li>
     </ol>
     <!-- Empty footer to take up space -->
     <div class="loading-error-footer"></div>
   </div>
 
   <div id="userPromptError" class="permission-error absolute-fill hidden">
-    <h1>Permissions were denied.</h1>
-    <p>You need to accept permissions to continue.</p>
-    <button id="reloadButton" class="main-button" onClick="window.location.reload()">Refresh</button>
+    <h1>許可が拒否されました。</h1>
+    <p>続行するには許可を受け入れる必要があります。</p>
+    <button id="reloadButton" class="main-button" onClick="window.location.reload()">リフレッシュ</button>
   </div>
 
   <div id="motionPermissionsErrorApple" class="permission-error absolute-fill hidden">
-    <h1>Permissions were denied.</h1>
-    <p>You've prevented the page from accessing your motion sensors.</p>
-    <p>Please close out of Safari to reenable your motion sensors.</p>
+    <h1>許可が拒否されました。</h1>
+    <p>ページがモーションセンサーにアクセスするのを防ぎました。</p>
+    <p>Safariを閉じて、モーションセンサーを有効にしてください。</p>
   </div>
 
   <div id="cameraSelectionWorldTrackingError" class="permission-error absolute-fill hidden">
     <p><img height="75px" src="//cdn.8thwall.com/web/img/runtimeerror/v1/computer-voxel.png" class="floater"></p>
-    <div class="error-text-header">Oops, something went wrong!</div>
+    <div class="error-text-header">おっと！何かが間違っていた！</div>
     <p id="camera_mode_world_tracking_error"></p>
   </div>
 </div>
