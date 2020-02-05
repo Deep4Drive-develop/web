@@ -269,6 +269,7 @@
 
 #logo {
     width: 90%;
+    max-width: 600px;
 }
 
 .powered-by {
