@@ -271,10 +271,12 @@
     background: url("//deep4drive-develop.github.io/mobility-inn/2020wakuwaku/image/D4D_logotype_small.jpg") no-repeat center;
     background-size: contain;
     width: 600px;
+    height: 450px;
 }
 
 .powered-by {
     background: url("//deep4drive-develop.github.io/mobility-inn/2020wakuwaku/image/powered by 8th wall_horizontal_black.svg") no-repeat center;
     background-size: contain;
     width: 200px;
+    height: 80px;
 }
