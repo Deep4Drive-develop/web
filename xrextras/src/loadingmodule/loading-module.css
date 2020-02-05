@@ -267,11 +267,8 @@
     text-align: center;
 }
 
-.logo {
-    background: url("//deep4drive-develop.github.io/mobility-inn/2020wakuwaku/image/D4D_logotype_small.jpg") no-repeat center;
-    background-size: contain;
-    width: 600px;
-    height: 450px;
+#logo {
+    width: 90%;
 }
 
 .powered-by {
